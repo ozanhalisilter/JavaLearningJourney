@@ -4,8 +4,8 @@ package PatikaStoreProject;
 public class Notebook extends Product{
         private int rom;
 
-    public Notebook(int price, int discountRate, int stock, String productName, Marka label, int ram, double screenSize, int rom) {
-        super(price, discountRate, stock, productName, label, ram, screenSize);
+    public Notebook(int id,int price, int discountRate, int stock, String productName, Marka label, int ram, double screenSize, int rom) {
+        super(id,price, discountRate, stock, productName, label, ram, screenSize);
         this.rom = rom;
     }
 

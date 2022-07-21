@@ -41,20 +41,25 @@ public class PatikaStore {
         ArrayList<Notebook> notebookArrayList = new ArrayList<>();
 
 
-        notebookArrayList.add( new Notebook(20000,20,100,"Matebook 15h37829", Huawei, 16,15.6,512));
-        notebookArrayList.add( new Notebook(2000,20,100,"Matebook 531das231", Huawei, 16,16.6,1024));
-        notebookArrayList.add( new Notebook(2000,20,100,"Matebook 213213", Huawei, 32,17.6,512));
-        notebookArrayList.add( new Notebook(2000,20,100,"Matebook 352gd123", Huawei, 8,13.6,1024));
+        notebookArrayList.add( new Notebook(1,20000,20,100,"Matebook 15h37829", Huawei, 16,15.6,512));
+        notebookArrayList.add( new Notebook(2,2000,20,100,"Matebook 531das231", Huawei, 16,16.6,1024));
+        notebookArrayList.add( new Notebook(3,2000,20,100,"Matebook 213213", Huawei, 32,17.6,512));
+        notebookArrayList.add( new Notebook(4,2000,20,100,"Matebook 352gd123", Huawei, 8,13.6,1024));
 
 
         ArrayList<Phone> phoneArrayList = new ArrayList<>();
 
-        phoneArrayList.add( new Phone( 3200,10,100,"SAMSUNG GALAXY A5", samsung, 4, 6.1,128,5000,"BLACK"));
-        phoneArrayList.add( new Phone( 1234,10,100,"SAMSUNG GALAXY A8", samsung, 3, 6.1,128,6000,"BLACK"));
-        phoneArrayList.add( new Phone( 32750,10,100,"HUAWEI GALAXY A6", Huawei, 3, 6.1,256,2400,"BLACK"));
-        phoneArrayList.add( new Phone( 93200,10,100,"APPLE GALAXY A9", Apple, 4, 6.1,128,5300,"BLACK"));
-        phoneArrayList.add( new Phone( 32000,10,100,"SAMSUNG GALAXY A44", Xiaomi, 8, 6.1,128,4211,"BLACK"));
+        phoneArrayList.add( new Phone( 5,3200,10,100,"SAMSUNG GALAXY A5", samsung, 4, 6.1,128,5000,"BLACK"));
+        phoneArrayList.add( new Phone( 6,1234,10,100,"SAMSUNG GALAXY A8", samsung, 3, 6.1,128,6000,"BLACK"));
+        phoneArrayList.add( new Phone(7, 32750,10,100,"HUAWEI GALAXY A6", Huawei, 3, 6.1,256,2400,"BLACK"));
+        phoneArrayList.add( new Phone( 8,93200,10,100,"APPLE GALAXY A9", Apple, 4, 6.1,128,5300,"BLACK"));
+        phoneArrayList.add( new Phone( 9,32000,10,100,"SAMSUNG GALAXY A44", Xiaomi, 8, 6.1,128,4211,"BLACK"));
 
+
+        for (Phone phone:
+             phoneArrayList) {
+            System.out.println(phone.toString());
+        }
     }
 
 }

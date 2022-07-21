@@ -29,6 +29,24 @@ Renk (Siyah,Kırmızı,Mavi)
 */
 
 public class Product {
+    private int id;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setDiscountRate(int discountRate) {
+        this.discountRate = discountRate;
+    }
+
+    public void setRam(int ram) {
+        this.ram = ram;
+    }
+
     private int price;
     private int discountRate;
     private int stock;
@@ -36,8 +54,9 @@ public class Product {
     private Marka label;
     private int ram;
     private double screenSize;
-    public Product(int price, int discountRate, int stock, String productName, Marka label, int ram, double screenSize) {
+    public Product(int id,int price, int discountRate, int stock, String productName, Marka label, int ram, double screenSize) {
         this.price = price;
+        this.id = id;
         this.discountRate = discountRate;
         this.stock = stock;
         this.productName = productName;
