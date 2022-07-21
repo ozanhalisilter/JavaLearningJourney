@@ -16,19 +16,44 @@ public class PatikaStore {
 
     public static void main(String[] args) {
 
+        Marka samsung = new Marka("Samsung", 1);
+        Marka Lenovo = new Marka("Lenovo", 2);
+        Marka Apple = new Marka("Apple", 3);
+        Marka Huawei = new Marka("Huawei", 4);
+        Marka Casper = new Marka("Casper", 5);
+        Marka Asus = new Marka("Asus", 6);
+        Marka HP = new Marka("HP", 7);
+        Marka Xiaomi = new Marka("Xiaomi", 8);
+        Marka Monster = new Marka("Monster", 9);
+
         ArrayList<Marka> markaList = new ArrayList<>();
-        markaList.add(new Marka("Samsung", 1));
-        markaList.add(new Marka("Lenovo", 2));
-        markaList.add(new Marka("Apple", 3));
-        markaList.add(new Marka("Huawei", 4));
-        markaList.add(new Marka("Casper", 5));
-        markaList.add(new Marka("Asus", 6));
-        markaList.add(new Marka("HP", 7));
-        markaList.add(new Marka("Xiaomi", 8));
-        markaList.add(new Marka("Monster", 9));
+                markaList.add(samsung);
+                markaList.add(Lenovo);
+                markaList.add(Apple);
+                markaList.add(Huawei);
+                markaList.add(Casper);
+                markaList.add(Asus);
+                markaList.add(HP);
+                markaList.add(Xiaomi);
+                markaList.add(Monster);
 
 
+        ArrayList<Notebook> notebookArrayList = new ArrayList<>();
 
+
+        notebookArrayList.add( new Notebook(20000,20,100,"Matebook 15h37829", Huawei, 16,15.6,512));
+        notebookArrayList.add( new Notebook(2000,20,100,"Matebook 531das231", Huawei, 16,16.6,1024));
+        notebookArrayList.add( new Notebook(2000,20,100,"Matebook 213213", Huawei, 32,17.6,512));
+        notebookArrayList.add( new Notebook(2000,20,100,"Matebook 352gd123", Huawei, 8,13.6,1024));
+
+
+        ArrayList<Phone> phoneArrayList = new ArrayList<>();
+
+        phoneArrayList.add( new Phone( 3200,10,100,"SAMSUNG GALAXY A5", samsung, 4, 6.1,128,5000,"BLACK"));
+        phoneArrayList.add( new Phone( 1234,10,100,"SAMSUNG GALAXY A8", samsung, 3, 6.1,128,6000,"BLACK"));
+        phoneArrayList.add( new Phone( 32750,10,100,"HUAWEI GALAXY A6", Huawei, 3, 6.1,256,2400,"BLACK"));
+        phoneArrayList.add( new Phone( 93200,10,100,"APPLE GALAXY A9", Apple, 4, 6.1,128,5300,"BLACK"));
+        phoneArrayList.add( new Phone( 32000,10,100,"SAMSUNG GALAXY A44", Xiaomi, 8, 6.1,128,4211,"BLACK"));
 
     }
 

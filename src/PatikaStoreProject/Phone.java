@@ -31,7 +31,7 @@ public class Phone extends Product {
     private String color;
     private int storage;
 
-    public Phone(double price, byte discountRate, int stock, String productName, Marka label, short ram, double screenSize) {
+    public Phone(int price, int discountRate, int stock, String productName, Marka label, int ram, double screenSize,int storage, int batteryCapacity,String color ) {
         super(price, discountRate, stock, productName, label, ram, screenSize);
         this.batteryCapacity = batteryCapacity;
         this.color = color;
