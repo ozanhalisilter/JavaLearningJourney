@@ -2,14 +2,14 @@ package PatikaStoreProject;
 
 
 public class Notebook extends Product{
-        private short rom;
+        private int rom;
 
-    public Notebook(double price, byte discountRate, int stock, String productName, Marka label, short ram, double screenSize, short rom) {
+    public Notebook(int price, int discountRate, int stock, String productName, Marka label, int ram, double screenSize, int rom) {
         super(price, discountRate, stock, productName, label, ram, screenSize);
         this.rom = rom;
     }
 
-    public short getRom() {
+    public int getRom() {
         return rom;
     }
 
