@@ -60,6 +60,11 @@ public class PatikaStore {
              phoneArrayList) {
             System.out.println(phone.toString());
         }
+
+        for (Notebook notebook:
+                notebookArrayList) {
+            System.out.println(notebook.toString());
+        }
     }
 
 }

@@ -16,4 +16,10 @@ public class Notebook extends Product{
     public void setRom(short rom) {
         this.rom = rom;
     }
+
+    public String toString(){
+        String str = String.format("| %4d | %6d | %% %3d | %4d | %20s | %10s | %4d | %4.2f | %5d |",getId(),getPrice(),getDiscountRate() ,getStock(),getProductName(),getLabel().getName(),getRam(),getScreenSize(),getRom()) ;
+        return str;
+
+    }
 }
